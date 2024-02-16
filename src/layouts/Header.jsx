@@ -49,60 +49,13 @@ export function Header() {
                 {/* phone */}
                 <Navbar.Brand href="#home" className='d-lg-none d-block text-[2.5rem] font-black'>Fashe<span className='text-[#e7654c]'>.</span></Navbar.Brand>
                 {/* phone */}
-                {/* <div className='lg:hidden flex gap-2'>
+                <div className='lg:hidden flex gap-2'>
                     <img className='w-[1.5rem] h-[1.5rem]' src={iconeHeader1} alt="" />
                     <div className='relative '>
                         <img className='w-[1.2rem] h-[1.5rem]' src={iconeHeader2} alt="" />
                         <p className='absolute top-[-0.4rem] right-[-0.4rem] bg-black text-white rounded-full text-[0.7rem] w-4 text-center'>{cartDataBase.length}</p>
                     </div>
-                </div> */}
-                <div className=' lg:hidden flex items-center gap-3'>
-                        <img onClick={() => { navigate(`/login`) }} className='w-[1.5rem] h-[1.5rem]' src={iconeHeader1} alt="" />
-                        <div className='border-[0.01rem] h-[1.3rem]'></div>
-                        <div className='relative '>
-                            <img className={`shopImg  w-[1.2rem] h-[1.5rem]`} onClick={myToggleFunction} src={iconeHeader2} alt="" />
-                            <div className='miniCart d-none' id='myDIV'>
-                                <div className='w-[100%] max-h-[30vh] overflow-y-scroll '>
-                                    {/* <div className='h-[18vh]  p-[1rem]'>
-                                        <div className='w-[100%] h-[100%] flex gap-4'>
-                                            <div className="w-[30%] h-[100%] flex items-center justify-center" style={{ backgroundImage: `url(${img})`, backgroundPosition: `center`, backgroundSize: `cover` }}>
-                                            </div >
-                                            <div className='flex flex-col gap-[0.8rem]'>
-                                                <h1 className='text-[1.3rem] cursor-pointer transition duration-300 hover:text-[#e7654c]'>product title</h1>
-                                                <p className='text-[0.9rem] text-gray-500'>100 * 12</p>
-                                                <HiMiniXMark className='text-[1.3rem] ml-[1rem] cursor-pointer' />
-                                            </div>
-                                        </div>
-                                    </div> */}
-                                    {
-                                        cartDataBase.map(element =>
-                                            <>
-                                                <div className='h-[18vh]  p-[1rem]' onClick={() => { navigate(`/shop/${element.id}`) }}>
-                                                    <div className='w-[100%] h-[100%] flex gap-4'>
-                                                        <div className="w-[30%] h-[100%] flex items-center justify-center" style={{ backgroundImage: `url(${element.productImage})`, backgroundPosition: `center`, backgroundSize: `cover` }}>
-                                                        </div >
-                                                        <div className='flex flex-col gap-[0.8rem]'>
-                                                            <h1 className='text-[1.3rem] cursor-pointer transition duration-300 hover:text-[#e7654c]'>{element.productName}</h1>
-                                                            <p className='text-[0.9rem] text-gray-500'>{element.productPrice} x {element.quantitySelected}</p>
-                                                            <HiMiniXMark className='text-[1.3rem] ml-[1rem] cursor-pointer' />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </>
-                                        )
-                                    }
-                                </div>
-                                <div className='w-[100%] h-[15vh] border-t  flex flex-col items-end justify-between py-[0.7rem] px-[0.4rem]'>
-                                    <h1 className='font-light text-[1.2rem]'>Subtotal: {calcSum()}</h1>
-                                    <div className='w-[100%] flex justify-between'>
-                                        <button className="bg-[#222222] text-white font-thin text-[1rem] rounded-3xl w-fit px-[2rem] py-[0.7rem] " onClick={() => { navigate(`/cart`) }}>VIEW CART</button>
-                                        <button className="bg-[#222222] text-white font-thin text-[1rem] rounded-3xl w-fit px-[2rem] py-[0.7rem] ">CHECKOUT</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <p className='absolute top-[-0.4rem] right-[-0.4rem] bg-black text-white rounded-full text-[0.7rem] w-4 text-center'>{cartDataBase.length}</p>
-                        </div>
-                    </div>
+                </div>
 
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" >
