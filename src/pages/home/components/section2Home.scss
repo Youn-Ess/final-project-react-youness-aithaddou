@@ -1,0 +1,15 @@
+.section2Home {
+    .myImg {
+        transition: 0.5s;
+        background-color: rgba(253, 253, 253, 0.568);
+    }
+
+    .myButton {
+        opacity: 0.9;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: #e7654c !important;
+        }
+    }
+}

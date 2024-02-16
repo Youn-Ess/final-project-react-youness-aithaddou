@@ -1,0 +1,45 @@
+.myHeader {
+    .links {
+        .link {
+            position: relative;
+            transition: 0.3s;
+
+            &:hover {
+                color: #e7654c !important;
+            }
+
+            &::after {
+                display: flex;
+                justify-content: center;
+                content: '';
+                position: absolute;
+                bottom: 20%;
+                left: 0;
+                height: 1px;
+                width: 100%;
+                background: transparent;
+                transition: 0.5s;
+            }
+
+            &:hover::after {
+                background: black;
+            }
+        }
+    }
+
+    .shopImg {
+        position: relative;
+        color: blue;
+    }
+
+    .miniCart {
+        position: absolute;
+        top: 200%;
+        right: 0;
+        z-index: 100;
+        width: 21vw;
+        height: fit-content;
+        background-color: rgba(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+}

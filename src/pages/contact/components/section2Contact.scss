@@ -1,0 +1,63 @@
+.myForm {
+    input {
+        width: 100%;
+        border: 1px solid #f0f0f0;
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+
+
+        &::placeholder {
+            font-size: 0.8rem;
+            color: #828482;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    textarea {
+        width: 100%;
+        border: 1px solid #f0f0f0;
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+
+        &::placeholder {
+            font-size: 0.8rem;
+            color: #828482;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+@media (max-width : 425px) {
+    .myForm {
+        input {
+            width: 100%;
+            border: 1px solid #d8d8d8c5;
+            padding: 0.8rem 1rem;
+            font-size: 0.8rem;
+
+
+            &::placeholder {
+                font-size: 0.9rem;
+                color: #828482;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            border: 1px solid #d8d8d8c5;
+            padding: 0.6rem 1rem;
+            font-size: 0.8rem;
+
+        }
+    }
+}

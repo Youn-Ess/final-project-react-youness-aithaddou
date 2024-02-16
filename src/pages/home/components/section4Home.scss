@@ -1,0 +1,10 @@
+.section4Home {
+    .pName {
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            color: #e7654c;
+        }
+    }
+}

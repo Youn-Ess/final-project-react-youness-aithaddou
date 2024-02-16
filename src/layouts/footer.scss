@@ -1,0 +1,42 @@
+.footer {
+    .inputFooter {
+        border: none;
+        border-bottom: 1px solid gray;
+        padding: 0.3rem 0;
+        width: 80%;
+        position: relative;
+        transition: 0.5s;
+
+        &:focus {
+            outline: none;
+            border-bottom: 1px solid #e7654c;
+        }
+    }
+
+    p {
+        color: #888888;
+        transition: 0.3s;
+
+        &:hover {
+            color: #e7654c;
+            cursor: pointer;
+        }
+    }
+
+    button {
+
+        transition: 0.3s;
+
+        &:hover {
+            background-color: #e7654c;
+        }
+    }
+
+    .i {
+        transition: 0.3s;
+
+        &:hover {
+            color: #e7654c;
+        }
+    }
+}
